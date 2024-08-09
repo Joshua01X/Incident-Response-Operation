@@ -6,11 +6,11 @@
 This project showcases a comprehensive approach to incident response operations using Microsoft Sentinel within the Microsoft Azure platform. The primary objective was to implement a structured incident response process following the NIST 800-61 Incident Response Plan. This involved setting up the necessary infrastructure, detecting and analyzing potential security incidents, containing and eradicating threats, and finally documenting and closing out incidents. The goal was to demonstrate proficiency in handling real-time security threats in a cloud environment and to highlight the capabilities of Microsoft Sentinel in orchestrating a robust incident response strategy.
 
 ## Technologies Employed
-- Microsoft Azure: Core cloud platform used for deploying and managing the infrastructure.
-- Microsoft Sentinel: Security Information and Event Management (SIEM) tool used for detecting, analyzing, and responding to security incidents.
-- Log Analytics Workspace: Used for ingesting and analyzing logs.
-- NIST 800-61 Incident Response Plan: Framework followed for structuring the incident response process.
-- Incident Response PlayBook: Employed to guide the containment, eradication, and recovery phases of the incident response.
+- <b>Microsoft Azure</b>: Core cloud platform used for deploying and managing the infrastructure.
+- <b>Microsoft Sentinel</b>: Security Information and Event Management (SIEM) tool used for detecting, analyzing, and responding to security incidents.
+- <b>Log Analytics Workspace</b>: Used for ingesting and analyzing logs.
+- <b>NIST 800-61 Incident Response Plan</b>: Framework followed for structuring the incident response process.
+- <b>Incident Response PlayBook</b>: Employed to guide the containment, eradication, and recovery phases of the incident response.
 
 ## Methodologies/Execution of Process
 The execution of this project was based on the NIST 800-61 Incident Response Plan, covering the following key phases:
