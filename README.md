@@ -21,19 +21,19 @@ Ingested all relevant logs into Log Analytics Workspace and Microsoft Sentinel.
 Configured alert rules to monitor and detect potential security incidents.
 ### Step 2: Detection & Analysis
 
-Set Severity, Status, Owner: Assigned priority and responsibility for the incident.
+<b>Set Severity, Status, Owner</b>: Assigned priority and responsibility for the incident.
 ![image](https://github.com/user-attachments/assets/ad4e21f0-6dbf-41a6-8480-4c112a066aa5)
 
-View Full Details: Conducted a detailed review of the incident.
-Observe Activity Log: Monitored the incident's history and progression.
+<b>View Full Details</b>: Conducted a detailed review of the incident.
+<b>Observe Activity Log</b>: Monitored the incident's history and progression.
 ![image](https://github.com/user-attachments/assets/af9154dc-67ad-4d2b-88f8-8c987733c582)
 
-Observe Entities and Incident Timelines: Analyzed the behavior of involved entities and the timeline of the incident.
-Investigate the Incident: Used Sentinel’s investigation tools to map the attack and determine its scope.
-Inspect Related Events: Examined related alerts and events involving the suspect entities.
+<b>Observe Entities and Incident Timelines</b>: Analyzed the behavior of involved entities and the timeline of the incident.
+<b>Investigate the Incident</b>: Used Sentinel’s investigation tools to map the attack and determine its scope.
+<b>Inspect Related Events</b>: Examined related alerts and events involving the suspect entities.
 ![image](https://github.com/user-attachments/assets/f5f373a4-643e-4ba1-9d43-a0a2d6acaf0e)
 
-Determine Legitimacy: Verified the incident as a True Positive by inspecting logs and corroborating details such as source accounts and IP addresses.
+<b>Determine Legitimacy</b>: Verified the incident as a True Positive by inspecting logs and corroborating details such as source accounts and IP addresses.
 ![image](https://github.com/user-attachments/assets/e255adf7-9be4-4ed2-8e3a-aecc2f66ca65)
 
 ### Step 3: Containment, Eradication, and Recovery
@@ -48,6 +48,19 @@ Followed a structured Incident Response PlayBook to contain the threat, eradicat
 Documented all findings, actions taken, and lessons learned.
 Closed out the incident in Microsoft Sentinel.
 ![image](https://github.com/user-attachments/assets/6632a062-7789-4405-81e7-140c5a7abd76)
+
+## Report Note
+> CUSTOM: Brute Force SUCCESS - Windows
+Incident number 116
+
+The incident activity log has been created by Alert Grouping. Entity suspect 
+49.147.201.7 has been tagged to be from the Philippines. Suspect IP raised 2 successful brute force alert targeting the resource honeypot1. Suspect IP is also related to several other high and medium severity alert incidents, implying that this IP is a malicious entity aiming to inflict damages or harm into the resource. On the same note, resource "honeypot1" has also been tagged to be related to several other brute force alert incidents and malware detection. The state of this resource indicates that it is overexposed to the public, providing easy access to persistent malicious activities from the net. 
+
+Upon expecting the logs associated with the entity IP, the incident has been confirmed to be true positive.   
+
+Will now proceed to the next step, remediating the incident by following the Incident Response PlayBook. The associated Network Security Group has been locked to only allow authorized traffic into the resource. Resource's password has also been reset and MFA has been implemented. 
+
+This case will now be document and close out this incident.
 
 ## Insights and Implications
 This project provided valuable insights into the practical application of the NIST 800-61 framework in a cloud environment. It highlighted the importance of real-time detection and analysis in minimizing the impact of security incidents. The project also underscored the effectiveness of using automated playbooks in streamlining the containment and recovery processes. By successfully managing the incident, the project demonstrated the critical role of thorough documentation and post-incident analysis in improving future response strategies.
