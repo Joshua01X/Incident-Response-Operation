@@ -51,19 +51,17 @@ Closed out the incident in Microsoft Sentinel.
 
 ## Report Note
 > CUSTOM: Brute Force SUCCESS - Windows
-Incident number 116
-
+Incident number 116 <br>
 The incident activity log has been created by Alert Grouping. Entity suspect 
-49.147.201.7 has been tagged to be from the Philippines. Suspect IP raised 2 successful brute force alert targeting the resource honeypot1. Suspect IP is also related to several other high and medium severity alert incidents, implying that this IP is a malicious entity aiming to inflict damages or harm into the resource. On the same note, resource "honeypot1" has also been tagged to be related to several other brute force alert incidents and malware detection. The state of this resource indicates that it is overexposed to the public, providing easy access to persistent malicious activities from the net. 
-
-Upon expecting the logs associated with the entity IP, the incident has been confirmed to be true positive.   
-
-Will now proceed to the next step, remediating the incident by following the Incident Response PlayBook. The associated Network Security Group has been locked to only allow authorized traffic into the resource. Resource's password has also been reset and MFA has been implemented. 
-
+49.147.201.7 has been tagged to be from the Philippines. Suspect IP raised 2 successful brute force alert targeting the resource honeypot1. Suspect IP is also related to several other high and medium severity alert incidents, implying that this IP is a malicious entity aiming to inflict damages or harm into the resource. On the same note, resource "honeypot1" has also been tagged to be related to several other brute force alert incidents and malware detection. The state of this resource indicates that it is overexposed to the public, providing easy access to persistent malicious activities from the net. <br>
+Upon expecting the logs associated with the entity IP, the incident has been confirmed to be true positive. <br>
+Will now proceed to the next step, remediating the incident by following the Incident Response PlayBook. The associated Network Security Group has been locked to only allow authorized traffic into the resource. Resource's password has also been reset and MFA has been implemented. <br>
 This case will now be document and close out this incident.
 
 ## Insights and Implications
-This project provided valuable insights into the practical application of the NIST 800-61 framework in a cloud environment. It highlighted the importance of real-time detection and analysis in minimizing the impact of security incidents. The project also underscored the effectiveness of using automated playbooks in streamlining the containment and recovery processes. By successfully managing the incident, the project demonstrated the critical role of thorough documentation and post-incident analysis in improving future response strategies.
+This project offered valuable insights into the effective application of the NIST 800-61 framework in a cloud environment. It underscored the importance of real-time detection and analysis, demonstrating how quick identification and response to security incidents can significantly reduce their impact. The use of automated playbooks was particularly effective, streamlining the containment and recovery processes while ensuring consistency and reducing the potential for human error.
+
+Additionally, the project highlighted the critical role of collaborative investigation and entity analysis in understanding the broader context of an incident, leading to more accurate and targeted responses. Finally, the emphasis on thorough documentation and post-incident analysis provided a strong foundation for continuous improvement, enabling the refinement of future incident response strategies and enhancing the overall security posture of the cloud environment.
 
 ## Conclusion
 The execution of this project demonstrates a deep understanding of incident response operations in a cloud environment. By leveraging Microsoft Sentinel and adhering to the NIST 800-61 Incident Response Plan, I was able to efficiently detect, analyze, and mitigate a security incident. The experience has reinforced the importance of preparation, swift detection, and comprehensive documentation in handling cybersecurity threats.
